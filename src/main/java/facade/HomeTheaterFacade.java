@@ -30,7 +30,7 @@ class HomeTheaterFacade {
         projector.on();
         projector.wideScreenMode();
         amp.on();
-        amp.setDvd(div);
+        amp.setDvd(this.dvd);
         amp.setSurroundSound();
         amp.setVolume(5);
         dvd.on();

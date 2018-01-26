@@ -34,6 +34,6 @@ abstract class Pizza {
     }
 
     public String toString(){
-
+        return "";
     }
 }
