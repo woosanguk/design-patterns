@@ -1,22 +1,28 @@
 package patterns.command_06;
 
 public class GarageDoor {
+    private final String name;
+
+    public GarageDoor(String name) {
+        this.name = name;
+    }
+
     void up(){
-        System.out.println("GarageDoor is UP");
+        System.out.println(this.name + "GarageDoor is UP");
     };
     void down(){
-        System.out.println("GarageDoor is down");
+        System.out.println(this.name + "GarageDoor is down");
     };
 
     void stop(){
-        System.out.println("GarageDoor is stop");
+        System.out.println(this.name + "GarageDoor is stop");
     };
 
     void lightOn(){
-        System.out.println("GarageDoor Light is ON");
+        System.out.println(this.name + "GarageDoor Light is ON");
     };
 
     void lightOff(){
-        System.out.println("GarageDoor Light is OFF");
+        System.out.println(this.name + "GarageDoor Light is OFF");
     };
 }
