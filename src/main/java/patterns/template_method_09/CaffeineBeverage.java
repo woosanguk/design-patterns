@@ -5,8 +5,13 @@ abstract class CaffeineBeverage {
         boilWater();
         brew();
         pourInCup();
-        addCondiments();
+        if (customerWantsCondiments()){
+            addCondiments();
+        }
+
     }
+
+
 
     abstract void brew();
 
@@ -18,5 +23,8 @@ abstract class CaffeineBeverage {
 
     private void boilWater() {
         System.out.println("물 끓이는 중");
+    }
+    private boolean customerWantsCondiments(){
+        return true;
     }
 }
