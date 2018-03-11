@@ -1,9 +1,9 @@
-package patterns.iterator_10;
+package patterns.iterator_composite_10;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class PancakeHouseMenu implements Menu {
+public class PancakeHouseMenu {
     ArrayList menuItems;
 
     public PancakeHouseMenu(){

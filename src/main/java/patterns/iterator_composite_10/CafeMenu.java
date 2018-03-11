@@ -1,9 +1,9 @@
-package patterns.iterator_10;
+package patterns.iterator_composite_10;
 
 import java.util.Hashtable;
 import java.util.Iterator;
 
-class CafeMenu implements Menu {
+class CafeMenu {
     Hashtable menuItems = new Hashtable();
 
     public CafeMenu() {

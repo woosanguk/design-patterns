@@ -1,4 +1,4 @@
-package patterns.iterator_10;
+package patterns.iterator_composite_10;
 
 import java.util.Iterator;
 

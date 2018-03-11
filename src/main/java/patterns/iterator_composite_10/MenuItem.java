@@ -1,6 +1,6 @@
-package patterns.iterator_10;
+package patterns.iterator_composite_10;
 
-class MenuItem {
+class MenuItem extends MenuComponent {
     private final String name;
     private final String description;
     private final boolean vegetarian;
@@ -23,5 +23,18 @@ class MenuItem {
 
     public String getDescription() {
         return description;
+    }
+
+    public boolean isVegetarian(){
+        return vegetarian;
+    }
+
+    public void print() {
+        System.out.print("  " + getName());
+        if (isVegetarian()){
+            System.out.print("(v)");
+        }
+        System.out.print(", " + getPrice());
+        System.out.println("    -- " + getDescription());
     }
 }

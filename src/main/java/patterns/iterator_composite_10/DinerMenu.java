@@ -1,8 +1,8 @@
-package patterns.iterator_10;
+package patterns.iterator_composite_10;
 
 import java.util.Iterator;
 
-class DinerMenu implements Menu{
+class DinerMenu {
     static final int MAX_ITEMS = 6;
     int numberOfItems = 0;
     MenuItem[] menuItems;
